@@ -1,0 +1,26 @@
+{
+  "name": "portafolio-profesional",
+  "version": "1.0.0",
+  "description": "Portafolio profesional con arquitectura hexagonal",
+  "main": "index.html",
+  "type": "module",
+  "scripts": {
+    "dev": "http-server public -p 8000 -o",
+    "build": "echo 'Build script - configure according to your needs'",
+    "test": "jest",
+    "test:watch": "jest --watch"
+  },
+  "keywords": [
+    "portfolio",
+    "profesional",
+    "curriculum",
+    "hexagonal"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "typescript": "^5.0.0"
+  }
+}
