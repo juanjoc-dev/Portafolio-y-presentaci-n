@@ -959,7 +959,7 @@ a:hover {
   font-size: var(--font-size-sm);
   font-weight: var(--font-weight-bold);
   color: var(--color-neutral-white) !important;
-  background: var(--color-text-primary);
+  background: var(--icon-color);
   border-radius: var(--border-radius-md);
   transition: all var(--transition-normal);
 }
