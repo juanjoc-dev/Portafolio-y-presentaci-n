@@ -524,7 +524,26 @@ a:hover {
 .bento-grid {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "bio hab"
+    "location tools";
   gap: var(--spacing-xl);
+}
+
+.bio-card {
+  grid-area: bio;
+}
+
+.skills-card {
+  grid-area: hab;
+}
+
+.tools-card {
+  grid-area: tools;
+}
+
+.location-card {
+  grid-area: location;
 }
 
 .bento-card {
@@ -573,6 +592,28 @@ a:hover {
   color: var(--color-text-secondary);
   line-height: var(--line-height-relaxed);
   margin-bottom: var(--spacing-2xl);
+}
+
+.bio-interests {
+  padding-top: var(--spacing-lg);
+  border-top: 1px solid var(--color-border);
+}
+
+.bio-interests-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-sm);
+}
+
+.bio-interests-text {
+  font-size: var(--font-size-base);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+  margin-bottom: var(--spacing-xl);
 }
 
 .bio-highlights {
@@ -635,6 +676,35 @@ a:hover {
     background: rgba(6, 182, 212, 0.1);
     border-color: rgba(6, 182, 212, 0.25);
   }
+}
+
+.skill-group {
+  margin-bottom: var(--spacing-lg);
+}
+
+.skill-group:last-child {
+  margin-bottom: 0;
+}
+
+.skill-group-label {
+  display: block;
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-neutral-gray);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: var(--spacing-sm);
+}
+
+/* Tools Card */
+
+.tools-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.tools-card .skill-tags {
+  margin-top: auto;
 }
 
 /* Location Card */
@@ -1235,6 +1305,11 @@ a:hover {
 
   .bento-grid {
     grid-template-columns: 1fr;
+    grid-template-areas:
+      "bio"
+      "hab"
+      "tools"
+      "location";
   }
 
   .bio-highlights {
